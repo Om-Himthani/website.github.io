@@ -1,0 +1,1157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Itim&family=Josefin+Sans:wght@200&family=Kanit&family=Patrick+Hand&family=Shizuru&family=Spline+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Patrick+Hand&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Balsamiq+Sans&family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.firstpage {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6)), url(./first.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* display: none; */
+}
+
+/* Navbar */
+header {
+    width: 100%;
+    height: 10vh;
+    /* background-color: black; */
+}
+
+header h1 {
+    font-size: 3.7rem;
+    color: white;
+    padding: 1rem;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #cdcc00;
+    border-radius: 3rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .link {
+    display: flex;
+    transition: 0.5s all linear;
+}
+
+header nav .link li {
+    list-style: none;
+    width: 14rem;
+    height: 4rem;
+    background-color: lightblue;
+    margin: 1.3rem 3rem;
+    padding-top: 0.5rem;
+    /* align-items: center; */
+    text-align: center;
+    border-radius: 2rem;
+    transition: 0.2s all linear;
+}
+
+header nav .link li:hover {
+    width: 15rem;
+    height: 5rem;
+    padding-top: 1rem;
+    border-radius: 3rem;
+}
+
+header nav .link a {
+    font-size: 2.7rem;
+    color: yellow;
+    font-family: 'Balsamiq Sans', cursive;
+
+
+}
+
+header .button {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main Home page */
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main .text {
+    font-size: 2.5rem;
+    color: white;
+    width: 65rem;
+    margin-left: 5rem;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: justify;
+    font-weight: bold;
+
+}
+
+.main .text .a {
+    font-size: 7rem;
+    color: #fff89e;
+}
+
+.main .text .b {
+    font-size: 5rem;
+    color: #7cc2ff;
+}
+
+.main .text .c {
+    font-size: 4rem;
+}
+
+.main .text .d {
+    font-size: 3rem;
+    color: aquamarine;
+}
+
+.main .text .e {
+    font-size: 2.5rem;
+    color: chartreuse;
+}
+
+.main .text a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: aqua;
+}
+
+#moving {
+    color: yellow;
+}
+
+#moving::after {
+    content: '';
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animate {
+    0% {
+        content: 'HTML';
+    }
+
+    20% {
+        content: 'CSS';
+    }
+
+    40% {
+        content: 'Javascript';
+    }
+
+    60% {
+        content: 'PHP';
+    }
+
+    80% {
+        content: 'MySql';
+    }
+
+    100% {
+        content: 'Python';
+    }
+
+}
+
+.firstpage .main .myimage {
+    width: 33rem;
+    height: 46rem;
+    position: absolute;
+
+    bottom: 5rem;
+    right: 5rem;
+}
+
+.firstpage .main .shape {
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+}
+
+
+
+/* services */
+.services {
+    height: auto;
+    width: 100%;
+    margin-top: 5rem;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(./services.jpg);
+    /* margin-left: 25rem; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* display: none; */
+}
+
+.services .info2 {
+    display: flex;
+    margin-top: 3.3rem;
+
+    height: auto;
+    margin-left: 2rem;
+}
+
+.services .info2 .card .design {
+    width: 32.0rem;
+    height: 29rem;
+    text-align: justify;
+
+    margin-right: 5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 2rem;
+    box-shadow: 0.1rem 0.1rem 1.2rem 0.7rem rgb(255, 255, 255);
+}
+
+.services .info2 .card .design .heading {
+    margin-bottom: 3.2rem;
+    margin-top: 2.2rem;
+    font-size: 3.0rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.services .info2 .card .design .more {
+    font-size: 2.2rem;
+    margin-left: 0.8rem;
+    font-family: 'Itim', cursive;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    line-height: 2.7rem;
+    color: white;
+}
+
+.services .info2 .content {
+
+    color: white;
+    font-family: 'Akaya Kanadaka', cursive;
+    margin-top: 2.3rem;
+}
+
+.services .info2 .content .content1 {
+    font-size: 3.0rem;
+    font-weight: bold;
+    margin-bottom: 3.5rem;
+    color: white;
+}
+
+.services .info2 .content .content2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+.services .skills {
+    height: auto;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services .skills .html1 {
+    width: 30.0rem;
+    height: 2.0rem;
+
+    border-radius: 2.0rem;
+    border: 0.2rem solid white;
+    ;
+}
+
+.services .skills .html2 {
+    width: 90%;
+    height: 1.6rem;
+    background-color: #00ff03;
+    border-radius: 2.0rem;
+    margin-top: 0rem;
+    animation-name: html;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+
+    }
+
+    100% {
+        width: 90%;
+    }
+
+}
+
+.services .skills .css1 {
+    width: 30.0rem;
+    height: 2.0rem;
+
+    border-radius: 2.0rem;
+    border: 0.2rem solid white;
+    ;
+}
+
+.services .skills .css2 {
+    width: 70%;
+    height: 1.6rem;
+    background-color: #71ff74;
+    border-radius: 2.0rem;
+    margin-top: 0rem;
+    animation-name: css;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+
+    }
+
+    100% {
+        width: 70%;
+    }
+
+}
+
+.services .skills .javascript1 {
+    width: 30.0rem;
+    height: 2.0rem;
+
+    border-radius: 2.0rem;
+    border: 0.2rem solid white;
+    ;
+}
+
+.services .skills .javascript2 {
+    width: 60%;
+    height: 1.6rem;
+    background-color: #97ff99;
+    border-radius: 2.0rem;
+    margin-top: 0rem;
+    animation-name: javascript;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+
+    }
+
+    100% {
+        width: 60%;
+    }
+
+}
+
+.services .skills .php1 {
+    width: 30.0rem;
+    height: 2.0rem;
+
+    border-radius: 2.0rem;
+    border: 0.2rem solid white;
+    ;
+}
+
+.services .skills .php2 {
+    width: 40%;
+    height: 1.6rem;
+    background-color: #ffee00;
+    border-radius: 2.0rem;
+    margin-top: 0rem;
+    animation-name: php;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+@keyframes php {
+    0% {
+        width: 0%;
+
+    }
+
+    100% {
+        width: 40%;
+    }
+
+}
+
+.services .skills .mysql1 {
+    width: 30.0rem;
+    height: 2.0rem;
+    margin-bottom: 1rem;
+    border-radius: 2.0rem;
+    border: 0.2rem solid white;
+}
+
+.services .skills .mysql2 {
+    width: 20%;
+    height: 1.6rem;
+    background-color: #ff4d4d;
+    border-radius: 2.0rem;
+    margin-top: 0rem;
+    animation-name: mysql;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes mysql {
+    0% {
+        width: 0%;
+
+    }
+
+    100% {
+        width: 20%;
+    }
+
+}
+
+.services .skills .h1 {
+    font-size: 6.0rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: auto 7.0rem;
+    color: #fff;
+}
+
+.services .skills .text {
+    font-size: 3.0rem;
+    color: #fff;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.services .info2 .content .button p {
+    font-size: 3.0rem;
+    font-family: 'Akaya Kanadaka', cursive;
+    margin-bottom: 2.0rem;
+    color: #fff;
+}
+
+.services .info2 .content .button a {
+    text-decoration: none;
+    border: 0.5rem solid rgb(255, 255, 255);
+    padding: 1.0rem;
+    /* margin-top: 2rem; */
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: black;
+    transition: 0.1s all linear;
+    border-radius: 2rem;
+}
+
+.services .info2 .content .button a:hover {
+    padding: 1.8rem;
+}
+
+/* About Us */
+.aboutus {
+    width: 100%;
+    height:  100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6)), url(./about.jpg);
+    background-size: 100% 100%;
+}
+
+.aboutus .div1 {
+    font-family: 'Akaya Kanadaka', cursive;
+
+    font-size: 2.7rem;
+    width: 43rem;
+    color: white;
+    margin-right: 25rem;
+}
+
+.aboutus .images {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    background-image: url(https://media.istockphoto.com/photos/young-programmer-picture-id452102703);
+    background-size: 100% 100%;
+    z-index: 99;
+    box-shadow: 0px 0px 20px 7px rgb(0 0 0 / 30%);
+}
+
+.aboutus .circles {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #ffcde0, #fdccab, #ffadff, #a9d8ff);
+    position: absolute;
+    margin-left: 81rem;
+    box-shadow: 0px 0px 20px 7px rgb(0 0 0 / 30%);
+    opacity: 0.7;
+    margin-bottom: 6rem;
+}
+
+/* contact us */
+form {
+    width: 60.0rem;
+    height: 62.3rem;
+    background-color: blue;
+
+    border-radius: 5.0rem;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    animation-name: cardcolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top: 2.5rem;
+    margin-left: 37.5rem;
+    padding-top: 1rem;
+
+}
+
+@keyframes cardcolor {
+    0% {
+        background-color: rgb(255, 255, 255);
+    }
+
+    10% {
+        background-color: rgb(210, 210, 255);
+    }
+
+    20% {
+        background-color: rgb(255, 255, 212);
+    }
+
+    30% {
+        background-color: rgb(199, 255, 199);
+    }
+
+    40% {
+        background-color: rgb(255, 216, 255);
+    }
+
+    50% {
+        background-color: rgb(255, 152, 255);
+    }
+
+    60% {
+        background-color: rgb(219, 245, 255);
+    }
+
+    70% {
+        background-color: rgb(209, 255, 240);
+    }
+
+    80% {
+        background-color: rgb(255, 234, 219);
+    }
+
+    90% {
+        background-color: rgb(181, 255, 107);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 97);
+    }
+
+}
+
+/*  .contact{
+  width: 100%; 
+  height: 20%;
+
+} */
+
+form div {
+    margin: 3.0rem 0;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+form input[type=text] {
+    width: 40.0rem;
+    height: 4.0rem;
+    border-radius: 3.0rem;
+    border: 0.1rem solid white;
+    font-size: 2.0rem;
+    padding: 0rem 1.0rem;
+    box-shadow: 0rem 2.4rem 2rem rgba(35, 52, 53, 0.25);
+}
+
+form input[type=text]:focus {
+    outline: none;
+    border: 0.5rem solid #fffc38;
+
+}
+
+
+label {
+
+    font-size: 2.0rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+form textarea {
+    width: 40.0rem;
+    height: 7.0rem;
+    border-radius: 3.0rem;
+    border: 0.1rem solid white;
+    font-size: 2.0rem;
+    padding: 0rem 1.0rem;
+    box-shadow: 0rem 2.4rem 2rem rgba(35, 52, 53, 0.25);
+}
+
+form textarea:focus {
+    outline: none;
+    border: 5px solid #fffc38;
+}
+
+
+
+.maincontentcontact {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(./contact.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    /* display: none; */
+}
+
+form input[type=submit] {
+    border: none;
+    font-size: 2rem;
+    padding: 0.7rem 6rem;
+    margin-bottom: 2rem;
+    border-radius: 3rem;
+    box-shadow: 0rem 2.4rem 2rem rgba(35, 52, 53, 0.25);
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #dffc9a;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1245px) {
+    header nav .link a {
+        font-size: 2.3rem;
+    }
+
+    header h1 {
+        font-size: 3.2rem;
+    }
+
+    header nav .link li {
+        /* margin: 1rem 1rem; */
+        margin: 1rem 1.5rem;
+        width: 13rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 1111px) {
+    .main .text {
+        width: 50rem;
+        font-size: 2.2rem;
+    }
+
+    .services .info2 .content {
+
+        margin-right: 6rem;
+    }
+
+    .aboutus .div1 {
+        margin-left: 4rem;
+
+    }
+
+    .aboutus .circles {
+        margin-left: 50rem;
+
+    }
+
+    .aboutus .images {
+        position: relative;
+        right: 20rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    header nav .link li {
+
+        margin: 1rem 1.5rem;
+        width: 10rem;
+    }
+
+    header nav .link a {
+        font-size: 1.9rem;
+    }
+
+    .services .info2 .content {
+
+
+        margin-bottom: 6rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    form {
+        margin-left: 24.5rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .main .text {
+        width: 30rem;
+
+    }
+    .main .text .a {
+        font-size: 5rem;
+        color: #fff89e;
+    }
+    
+    .main .text .b {
+        font-size: 4rem;
+        color: #7cc2ff;
+    }
+    
+    .main .text .c {
+        font-size: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 845px) {
+    .main .myimage {
+        bottom: 0rem;
+    }
+
+    .main .shape {
+        bottom: -10rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav .link li {
+        /* margin: 1rem 1rem; */
+        margin: 1rem 1.5rem;
+        width: 13rem;
+    }
+
+    header nav .link a {
+        font-size: 2.4rem;
+    }
+
+    header h1 {
+        font-size: 3.7rem;
+        width: 26rem;
+    }
+
+    .aboutus .div1 {
+        margin-left: 0rem;
+        font-size: 2.4rem;
+        margin-right: 0rem;
+        width: 63rem;
+    }
+
+    .aboutus {
+        flex-direction: column;
+        justify-content: normal;
+    }
+
+    .aboutus .circles {
+        margin-top: 29rem;
+        margin-left: 10rem;
+    }
+
+    .aboutus .images {
+        position: relative;
+        right: 0rem;
+        top: 4rem;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    header nav .link li {
+
+        margin: 1rem 0.5rem;
+
+    }
+
+    .main .text {
+        width: 25rem;
+    }
+
+    .main .myimage {
+        bottom: 4rem;
+    }
+
+    .main .myimage {
+        width: 30rem;
+        height: 42rem;
+    }
+
+    .main .shape {
+        bottom: -8rem;
+        width: 44rem;
+    }
+
+    nav .links {
+        width: 20rem;
+        height: 50rem;
+
+    }
+
+}
+
+@media only screen and (max-width: 864px) {
+    form {
+        margin-left: 14.5rem;
+        height: 53.1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        margin-left: 8.5rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    form {
+        width: 50rem;
+        margin-left: 4.5rem;
+    }
+
+    form input[type=text] {
+        width: 33rem;
+
+    }
+
+    form textarea {
+        width: 33rem;
+    }
+
+    header .hato {
+        display: none;
+    }
+
+    header .button {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    header .link {
+        /* display: flex; */
+        flex-direction: column;
+        background-color: white;
+        width: 16rem;
+        height: 26rem;
+        align-items: center;
+        /* position: relative; */
+        /* right: 12px; */
+        position: absolute;
+        /* margin-right: -36px; */
+        right: 0;
+        z-index: 111;
+        margin: 3rem;
+        margin-top: 6rem;
+
+        /* opacity: 0.8; */
+        box-shadow: 0.1rem 0.1rem 1.2rem 0.7rem rgb(72 72 72);
+
+
+    }
+    .main .text .a {
+        font-size: 6rem;
+        color: #fff89e;
+    }
+    
+    .main .text .b {
+        font-size: 4rem;
+        color: #7cc2ff;
+    }
+    
+    .main .text .c {
+        font-size: 4rem;
+    }
+    header .button {
+        display: block;
+    }
+
+    header nav .link li:hover {
+        width: 14rem;
+        height: 4rem;
+        padding-top: 0.7rem;
+        border-radius: 2rem;
+    }
+
+    header nav .link a {
+        font-size: 2rem;
+    }
+
+    header nav .link li {
+        margin: 0.5rem 0.5rem;
+    }
+
+    nav {
+        align-items: initial;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .close {
+        display: none;
+        color: white;
+    }
+
+    .main .text {
+        width: auto;
+        margin-top: 10rem;
+        margin-right: 2rem;
+    }
+
+    .main .img {
+        display: none;
+    }
+
+    .main {
+        justify-content: center;
+    }
+
+    .services .info2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .skills {
+        flex-direction: column;
+    }
+
+    .services .info2 .content {
+        margin-right: 0;
+    }
+
+    .aboutus .div1 {
+        width: auto;
+        margin-left: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .aboutus .circles {
+        width: 28rem;
+        height: 28rem;
+        margin-top: 42rem;
+    }
+
+    .aboutus .images {
+        width: 28rem;
+        height: 28rem;
+
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .aboutus .circles {
+        width: 26rem;
+        height: 26rem;
+        margin-top: 42rem;
+    }
+
+    .aboutus .images {
+        width: 26rem;
+        height: 26rem;
+        top: 6rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+.aboutus .images {
+    width: 21rem;
+    height: 21rem;
+    top: 0rem;
+}
+.aboutus .circles {
+    width: 21rem;
+    height: 21rem;
+    margin-top: 40rem;
+}
+    .aboutus {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6)), url(./about2.jpg);
+
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .services {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(./services2.jpg);
+    }
+
+    .aboutus {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6)), url(./about3.jpg);
+
+    }
+
+    .maincontentcontact {
+        background-image: none;
+        animation-name: cardcolorchange;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+
+    @keyframes cardcolorchange {
+        0% {
+            background-color: rgb(255, 42, 42);
+        }
+
+        10% {
+            background-color: rgb(97, 97, 255);
+        }
+
+        20% {
+            background-color: rgb(255, 255, 93);
+        }
+
+        30% {
+            background-color: rgb(40, 255, 40);
+        }
+
+        40% {
+            background-color: rgb(255, 92, 255);
+        }
+
+        50% {
+            background-color: rgb(114, 52, 114);
+        }
+
+        60% {
+            background-color: rgb(0, 183, 255);
+        }
+
+        70% {
+            background-color: rgb(0, 255, 170);
+        }
+
+        80% {
+            background-color: rgb(255, 106, 0);
+        }
+
+        90% {
+            background-color: rgb(128, 255, 0);
+        }
+
+        100% {
+            background-color: rgb(255, 255, 0)
+        }
+
+    }
+
+    .firstpage {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6)), url(./first2.jpg);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    form {
+        height: 47.1rem;
+        margin-top: 5rem;
+        width: 35rem;
+        margin-left: 5rem;
+    }
+
+    form input[type=text] {
+        width: 24rem;
+
+    }
+
+    form textarea {
+        width: 24rem;
+    }
+
+    form div {
+        margin: 2.0rem 0;
+    }
+
+    .home .maincontentcontact {
+
+        height: 100vh;
+
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    form {
+
+        margin-left: 1rem;
+    }
+}
