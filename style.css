@@ -220,8 +220,8 @@ a {
     width: 32.0rem;
     height: 29rem;
     text-align: justify;
-
-    margin-right: 5rem;
+    padding: 0rem 2rem;
+    margin-right: 2rem;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
